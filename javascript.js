@@ -1,6 +1,6 @@
 //Pacmanin sijainti
 var posRow=2, posCel=1;
-
+const maxRow=2, maxCel=2;
 function movePacMan(){
 	document.getElementById("playground").rows[posRow].cells[posCel].innerHTML='<img src="./kuvat/pacman.png">';
 }
@@ -10,7 +10,11 @@ function clearCell(){
 
 function moveUp(){
 	clearCell();
-	posRow--;
+	if( posRow == 0 ){
+		posRow = maxRow;
+	}else{
+		posRow--;
+	}
 	movePacMan();
 }
 
