@@ -1,0 +1,17 @@
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+.huom {
+	color: red;
+}
+td, img {
+  height: 70px;
+  width: 70px;
+}
